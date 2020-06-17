@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.mycompany.foodstudiesconnection.VistaPublicacionesController">
+   <children>
+      <TextField fx:id="autorInputNombre" layoutX="47.0" layoutY="104.0" />
+      <RadioButton fx:id="publisTitle" layoutX="55.0" layoutY="151.0" mnemonicParsing="false" text="Título" />
+      <RadioButton fx:id="publisAutor" layoutX="139.0" layoutY="151.0" mnemonicParsing="false" text="Autor" />
+      <Button fx:id="publisBotonAdd" layoutX="34.0" layoutY="306.0" onAction="#publisAnadir" text="Añadir" />
+      <Button fx:id="publisBotonSearch" layoutX="98.0" layoutY="306.0" onAction="#publisBuscar" text="Buscar" />
+      <Button fx:id="publisBotonDel" layoutX="164.0" layoutY="306.0" onAction="#publisBorrar" text="Borrar" />
+      <TableView layoutX="300.0" layoutY="82.0" onMouseClicked="#seleccionar" prefHeight="253.0" prefWidth="276.0">
+        <columns>
+          <TableColumn prefWidth="135.0" text="Título" />
+          <TableColumn prefWidth="140.0" text="Autor" />
+        </columns>
+      </TableView>
+      <Button fx:id="salirPublis" layoutX="503.0" layoutY="358.0" mnemonicParsing="false" onAction="#cerrarVentana" text="Salir" />
+   </children>
+</AnchorPane>

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="com.mycompany.foodstudiesconnection.FXMLController">
+<AnchorPane id="AnchorPane" prefHeight="212.0" prefWidth="149.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.foodstudiesconnection.FXMLController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Button fx:id="autores" layoutX="26.0" layoutY="59.0" onAction="#autoresMenu" text="Autores" />
+        <Label fx:id="label" layoutX="4.0" layoutY="20.0" minHeight="16" minWidth="69" text="Food Studies Connection" />
+      <AnchorPane layoutX="117.0" layoutY="212.0" />
+      <Button fx:id="publicaciones" layoutX="26.0" layoutY="116.0" onAction="#publicacionesMenu" text="Publicaciones" />
+      <Button fx:id="salirFSC" layoutX="26.0" layoutY="160.0" mnemonicParsing="false" onAction="#cerrarApp" text="Salir" />
     </children>
 </AnchorPane>
